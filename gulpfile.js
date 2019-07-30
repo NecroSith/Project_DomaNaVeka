@@ -18,7 +18,7 @@ const gulp = require('gulp'),
 	del = require('del');
 
 gulp.task('sass', () => {
-    return gulp.src('src/scss/**/*.scss').
+    return gulp.src(['src/scss/**/*.scss', 'src/sass/**/*.sass']).
     	pipe(plumber({
     		errorHandler: notify.onError(function(err){
     			return {
@@ -135,7 +135,7 @@ gulp.task('server', () => {
     browserSync.init({
         server: { baseDir: './build'}
     })
-    gulp.watch('./src/scss/**/*.scss').on('change', gulp.series('sass', 'minify-css', reload));
+    gulp.watch(['src/scss/**/*.scss', 'src/sass/**/*.sass']).on('change', gulp.series('sass', 'minify-css', reload));
     gulp.watch('./src/js/**/*.js').on('change', gulp.series('copy:js'));
     gulp.watch('./src/php/**/*.*').on('change', gulp.series('copy:php'));
     gulp.watch('./src/libs/**/*.*').on('change', gulp.series('copy:lib'));

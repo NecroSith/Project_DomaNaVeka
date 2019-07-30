@@ -1,0 +1,94 @@
+.header .header__button {
+  cursor: pointer;
+  color: #fff;
+  width: 170px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #ffb111;
+  background-image: -o-linear-gradient(311deg, #fb2b2b 0%, #f86c26 100%);
+  background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .header .header__button:hover {
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05); }
+
+.header .header__hours-wrapper:after {
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 500; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria.eot");
+  src: url("../fonts/Geometria.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria.woff") format("woff"), url("../fonts/Geometria.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Light.eot");
+  src: url("../fonts/Geometria-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Light.woff") format("woff"), url("../fonts/Geometria-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Geometria';
+  src: url("../fonts/Geometria-Bold.eot");
+  src: url("../fonts/Geometria-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Geometria-Bold.woff") format("woff"), url("../fonts/Geometria-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+
+.header {
+  padding: 15px 0; }
+  .header > .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .header .header__hours-wrapper {
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header .header__hours-wrapper:after {
+      content: '\f017';
+      font-size: 1.3rem;
+      color: #fb2b2b;
+      margin-left: 25px; }
+
+.main {
+  background: url(../../../img/bg/bg_main.png) center center no-repeat;
+  height: 600px;
+  color: #fff;
+  padding-top: 70px; }
+  .main h1 {
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 40px; }
+  .main h6 {
+    margin-bottom: 45px; }
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Geometria', sans-serif; }
+
+.doma-logo {
+  text-transform: uppercase; }
+  .doma-logo img {
+    margin-right: 20px; }

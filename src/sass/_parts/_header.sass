@@ -1,0 +1,18 @@
+.header
+    padding: 15px 0
+    &>.container
+        display: flex
+        justify-content: space-between
+        align-items: center
+    .header__button
+        @extend %button-std
+    .header__hours-wrapper
+        text-align: right
+        display: flex
+        align-items: center
+        &:after
+            @extend %fa-pseudo-regular
+            content: '\f017'
+            font-size: 1.3rem
+            color: #fb2b2b
+            margin-left: 25px
