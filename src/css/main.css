@@ -1,26 +1,11 @@
-.header .header__button {
-  cursor: pointer;
-  color: #fff;
-  width: 170px;
-  height: 50px;
+input:not([type=submit]) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0.12px;
+  padding: 1rem 0;
   border-radius: 5px;
-  background-color: #ffb111;
-  background-image: -o-linear-gradient(311deg, #fb2b2b 0%, #f86c26 100%);
-  background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
-  .header .header__button:hover {
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    -webkit-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    transform: scale(1.05); }
-
-.header .header__hours-wrapper:after {
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 500; }
+  border: 1px solid #dcdcdc; }
 
 @font-face {
   font-family: 'Geometria';
@@ -55,6 +40,25 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+  .header .header__button {
+    cursor: pointer;
+    color: #fff;
+    width: 170px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #ffb111;
+    background-image: -o-linear-gradient(311deg, #fb2b2b 0%, #f86c26 100%);
+    background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .header .header__button:hover {
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
   .header .header__hours-wrapper {
     text-align: right;
     display: -webkit-box;
@@ -64,6 +68,8 @@
     -ms-flex-align: center;
     align-items: center; }
     .header .header__hours-wrapper:after {
+      font-family: 'Font Awesome\ 5 Free';
+      font-weight: 500;
       content: '\f017';
       font-size: 1.3rem;
       color: #fb2b2b;
@@ -73,13 +79,92 @@
   background: url(../../../img/bg/bg_main.png) center center no-repeat;
   height: 600px;
   color: #fff;
-  padding-top: 70px; }
+  padding-top: 70px;
+  z-index: -2; }
   .main h1 {
     font-weight: 700;
     font-size: 36px;
     margin-bottom: 40px; }
   .main h6 {
     margin-bottom: 45px; }
+  .main .main__hexagon {
+    position: relative;
+    width: 370px;
+    height: 213.62px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 27%;
+    right: 19%; }
+    .main .main__hexagon:before, .main .main__hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 185px solid transparent;
+      border-right: 185px solid transparent; }
+    .main .main__hexagon:before {
+      bottom: 100%;
+      border-bottom: 106.81px solid #fff; }
+    .main .main__hexagon:after {
+      top: 100%;
+      width: 0;
+      border-top: 106.81px solid #fff; }
+    .main .main__hexagon form {
+      margin: -36px auto 0 auto;
+      width: 60%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      z-index: 10;
+      position: relative; }
+      .main .main__hexagon form p {
+        color: #284157;
+        font-weight: 700;
+        text-align: center; }
+      .main .main__hexagon form input:not([type=submit]) {
+        width: 95%;
+        height: 45px;
+        text-align: center;
+        margin-bottom: 10px; }
+      .main .main__hexagon form input[type=submit] {
+        cursor: pointer;
+        color: #fff;
+        width: 95%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #ffb111;
+        background-image: -o-linear-gradient(311deg, #fb2b2b 0%, #f86c26 100%);
+        background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin-top: 15px; }
+        .main .main__hexagon form input[type=submit]:hover {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          -webkit-transform: scale(1.05);
+          -ms-transform: scale(1.05);
+          transform: scale(1.05); }
+  .main .main__wedo {
+    width: 46%;
+    margin-top: 18%; }
+    .main .main__wedo ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding: 0; }
+      .main .main__wedo ul li {
+        list-style-type: none;
+        width: 22%;
+        font-weight: 500;
+        font-size: 14px; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -92,3 +177,13 @@ body {
   text-transform: uppercase; }
   .doma-logo img {
     margin-right: 20px; }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1170px;
+    padding: 0; } }
+
+.fs-12 {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px; }

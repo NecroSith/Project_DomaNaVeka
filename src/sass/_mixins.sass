@@ -1,7 +1,7 @@
-%button-std
+=button-std($width)
     cursor: pointer
     color: #fff
-    width: 170px
+    width: $width
     height: 50px
     border-radius: 5px
     background-color: #ffb111
@@ -11,10 +11,35 @@
         transition: all 0.3s ease
         transform: scale(1.05)
 
-%fa-pseudo-bold
+=fa-pseudo($weight)
     font-family: 'Font Awesome\ 5 Free'
-    font-weight: 900
+    font-weight: $weight
 
-%fa-pseudo-regular
-    font-family: 'Font Awesome\ 5 Free'
-    font-weight: 500
+%input-std
+    font-size: 12px
+    font-weight: 400
+    line-height: 19px
+    letter-spacing: 0.12px
+    padding: 1rem 0
+    border-radius: 5px
+    border: 1px solid #dcdcdc
+
+=hexagon($width, $color)
+    position: relative
+    width: $width
+    height: 213.62px
+    background-color: $color
+    // margin: 106.81px 0
+    &:before, &:after
+        content: ""
+        position: absolute
+        width: 0
+        border-left: 185px solid transparent
+        border-right: 185px solid transparent
+    &:before
+        bottom: 100%
+        border-bottom: 106.81px solid $color
+    &:after
+        top: 100%
+        width: 0
+        border-top: 106.81px solid $color

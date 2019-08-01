@@ -15,3 +15,16 @@ body
     text-transform: uppercase
     img
         margin-right: 20px
+
+input:not([type=submit])
+    @extend %input-std
+
+@media (min-width: 1200px)
+    .container
+        max-width: 1170px
+        padding: 0
+
+.fs-12
+    display: block
+    font-size: 12px
+    margin-top: 10px
