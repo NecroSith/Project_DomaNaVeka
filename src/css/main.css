@@ -238,12 +238,47 @@ input:not([type=submit]) {
   height: 1440px;
   padding: 100px 0;
   width: 100%; }
+  .wecando .item-title {
+    margin-bottom: 0; }
+  .wecando > div > p {
+    margin: 50px 0;
+    font-size: 20px;
+    font-weight: 500; }
   .wecando > * {
     text-align: center; }
   .wecando .wecando__input-wrapper {
     margin-top: 60px;
     padding: 70px 100px;
     background-color: #fff; }
+    .wecando .wecando__input-wrapper .item-title {
+      margin-bottom: 0; }
+    .wecando .wecando__input-wrapper input:not([type=submit]) {
+      padding: 20px 15px;
+      width: 30%; }
+    .wecando .wecando__input-wrapper input[type=submit] {
+      cursor: pointer;
+      color: #fff;
+      width: 30%;
+      height: 60px;
+      border-radius: 5px;
+      background-color: #ffb111;
+      background-image: -o-linear-gradient(311deg, #fb2b2b 0%, #f86c26 100%);
+      background-image: linear-gradient(-221deg, #fb2b2b 0%, #f86c26 100%);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .wecando .wecando__input-wrapper input[type=submit]:hover {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05); }
+    .wecando .wecando__input-wrapper p {
+      text-align: left;
+      font-size: 16px;
+      font-weight: 500;
+      margin: 40px 0; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -272,11 +307,6 @@ body {
   font-size: 30px;
   font-weight: 700;
   margin-bottom: 60px; }
-
-p {
-  font-size: 20px;
-  font-weight: 400;
-  margin: 60px 0; }
 
 .item-title--small {
   font-size: 22px;

@@ -5,9 +5,27 @@
     height: 1440px
     padding: 100px 0
     width: 100%
+    .item-title
+        margin-bottom: 0
+    & > div > p
+        margin: 50px 0
+        font-size: 20px
+        font-weight: 500
     &>*
         text-align: center
     .wecando__input-wrapper
         margin-top: 60px
         padding: 70px 100px
         background-color: #fff
+        .item-title
+            margin-bottom: 0
+        input:not([type=submit])
+            padding: 20px 15px
+            width: 30%
+        input[type=submit]
+            +button-std(30%, 60px)
+        p
+            text-align: left
+            font-size: 16px
+            font-weight: 500
+            margin: 40px 0
