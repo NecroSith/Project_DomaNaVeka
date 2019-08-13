@@ -311,3 +311,28 @@ body {
 .item-title--small {
   font-size: 22px;
   text-align: left; }
+
+.slick-slide img {
+  margin: 0 auto; }
+
+.slick-arrow {
+  width: 40px;
+  height: 40px;
+  background: white; }
+  .slick-arrow:hover {
+    background: white; }
+  .slick-arrow:before {
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    color: #000; }
+
+.slick-prev {
+  left: 15px;
+  z-index: 1; }
+  .slick-prev:before {
+    content: '\f053'; }
+
+.slick-next {
+  right: 15px; }
+  .slick-next:before {
+    content: '\f054'; }

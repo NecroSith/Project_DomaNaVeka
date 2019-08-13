@@ -3,6 +3,7 @@ $(document).ready(function() {
         // dots: true,
         // infinite: true,
         // speed: 300,
+        arrows: false,
         centerMode: false,
         slidesToShow: 3
     });
