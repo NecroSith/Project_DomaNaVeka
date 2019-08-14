@@ -280,6 +280,36 @@ input:not([type=submit]) {
       font-weight: 500;
       margin: 40px 0; }
 
+.guarantee {
+  padding: 100px 0;
+  text-align: center; }
+  .guarantee .container > p {
+    color: #284157;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 75px; }
+
+.materials {
+  background-color: #284157;
+  padding: 100px 0;
+  text-align: center; }
+  .materials .item-title {
+    color: #fff; }
+  .materials .materials__item p {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 30px 0; }
+  .materials .materials__item a {
+    color: #fff;
+    text-decoration: underline; }
+
+.advantages {
+  height: 780px;
+  background: url(../../img/bg/leaves_lower.png) top left no-repeat, url(../../img/bg/bg_pros.png) center center no-repeat;
+  padding: 100px 0; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -306,7 +336,8 @@ body {
   color: #284157;
   font-size: 30px;
   font-weight: 700;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  text-align: center; }
 
 .item-title--small {
   font-size: 22px;
