@@ -309,6 +309,42 @@ input:not([type=submit]) {
   height: 780px;
   background: url(../../img/bg/leaves_lower.png) top left no-repeat, url(../../img/bg/bg_pros.png) center center no-repeat;
   padding: 100px 0; }
+  .advantages .item-title {
+    margin-bottom: 100px; }
+  .advantages .adv__item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .advantages .adv__item-wrapper .adv__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 58%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .advantages .adv__item-wrapper .adv__item:not(:last-child) {
+        margin-bottom: 40px; }
+      .advantages .adv__item-wrapper .adv__item-img {
+        margin-right: 30px; }
+      .advantages .adv__item-wrapper .adv__item-desc p:first-child {
+        color: #284157;
+        font-size: 18px;
+        font-weight: 700; }
+      .advantages .adv__item-wrapper .adv__item-desc p {
+        color: #284157;
+        font-size: 14px;
+        font-weight: 500; }
+
+.ceo {
+  padding: 100px 0; }
 
 * {
   -webkit-box-sizing: border-box;

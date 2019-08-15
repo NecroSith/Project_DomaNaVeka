@@ -2,3 +2,26 @@
     height: 780px
     background: url(../../img/bg/leaves_lower.png) top left no-repeat, url(../../img/bg/bg_pros.png) center center no-repeat
     padding: 100px 0
+    .item-title
+        margin-bottom: 100px
+    .adv__item-wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        .adv__item
+            display: flex
+            width: 58%
+            align-items: center
+            &:not(:last-child)
+                margin-bottom: 40px
+            &-img
+                margin-right: 30px
+            &-desc
+                p:first-child
+                    color: #284157
+                    font-size: 18px
+                    font-weight: 700   
+                p     
+                    color: #284157
+                    font-size: 14px
+                    font-weight: 500
